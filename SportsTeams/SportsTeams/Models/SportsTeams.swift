@@ -13,11 +13,11 @@ class SportsTeams {
     // naming the variables for the table view and making them their desiered type
     var teamName: String
     var ranking: String
-    var playerCount: Int
+    var playerCount: Int?
     
 //MARK: - Initializer
     // declaring the varibles and setting them to themselves and giving them a value.
-    init(teamName: String, ranking: String, playerCount: Int) {
+    init(teamName: String, ranking: String, playerCount: Int?) {
         self.teamName = teamName
         self.ranking = ranking
         self.playerCount = playerCount

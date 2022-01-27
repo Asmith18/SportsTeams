@@ -35,7 +35,8 @@ class TeamsController {
     }
     
     // when deleting a team all we need to knoiw is what team the user is trying to delete
-    func deleteTeam(teams: SportsTeams) {
-
+    func deleteTeam(team: SportsTeams) {
+        guard let indexOfTeam = teams.firstIndex(of: team) else {return}
+        teams.remove(at: indexOfTeam)
     }
 }
